@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atkinson Hyperlegible Next';
+}
+
+body.b1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("image/BangkokView.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 480px;
+    padding: 30px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    border: 2px solid rgb(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.RegisterBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 560px;
+    padding: 30px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+    border: 2px solid rgb(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.loginheader{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.Registerheader{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.loginheader header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Registerheader header{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.inputBox .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: .3s;
+}
+
+.inputBox i{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+}
+
+::placeholder{
+    font-weight: 500;
+    color: black;
+}
+
+.input-field:focus{
+    width: 105%;
+}
+
+.forgetPass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+#check{
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section a{
+    color:#fff
+}
+
+.inputSubmit{
+    position: relative;
+}
+
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inputSubmit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50px);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background: #000;
+    transform: scale(1.05, 1);
+}
+
+.sign-up-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a{
+    color: #fff;
+    font-weight: 600;
+}
+
+.sign-in-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-in-link a{
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ---------- Home page ---------- */
+
+.language-switch{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.language-switch a {
+  color: #333;
+  padding: 0 5px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.language-switch a:hover {
+  color: #007BFF;
+}
+
+  /* ---------- Navbar ---------- */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #007BFF;
+  }
+
+  .user-name {
+    color: #d4af37;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+  
+  /* ---------- Hero Section ---------- */
+  .hero {
+    padding: 170px 5%;
+    background-color: #fff;
+    text-align: left; /* หากต้องการจัดกลางเปลี่ยนเป็น center */
+    background: url("image/BangkokView.jpg") no-repeat;
+  }
+
+  .hero-text {
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    color: #fff;
+    margin-left: 50px;
+    margin-top: -150px;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin-bottom: -10px;
+    line-height: 1.2;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 600px; /* จำกัดความกว้างเพื่อให้อ่านข้อความง่าย */
+    margin-bottom: 50px;
+    margin-left: 5px;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #d4af37, #b8860b, #8b7500);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    font-weight: bold;
+  }
+  
+  .hero-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+  }
+
+  .hero h1, .hero p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* ---------- Lobby Image Section ---------- */
+  .lobby-section {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .lobby-section img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  /* ---------- Footer ---------- */
+  footer {
+    text-align: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* ---------- Responsive สำหรับหน้าจอเล็ก ---------- */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 60px 5%;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .room-intro {
+    background-color: #fff;
+    padding: 60px 10% 40px;
+    text-align: center;
+  }
+  
+  .room-intro h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  .room-intro p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /*สไลด์ภาพ*/
+
+  .room-full-slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .slide-caption {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  }
+  
+  .nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-arrow:hover {
+    background: rgba(0,0,0,0.6);
+  }
+  
+  .nav-arrow.left {
+    left: 20px;
+  }
+  
+  .nav-arrow.right {
+    right: 20px;
+  }
+
+  /* ตั้งค่าพื้นฐานของ body */
+  body.b2{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
